@@ -15,7 +15,7 @@ const QuoteBox = (props) => {
         textId={textId}
         authorId={authorId}
       ></QuoteDisplay>
-      <QuoteControl newQuoteId={newQuoteId}></QuoteControl>
+      <QuoteControl text={text} newQuoteId={newQuoteId}></QuoteControl>
     </div>
   );
 };
