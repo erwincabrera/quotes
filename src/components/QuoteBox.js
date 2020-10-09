@@ -6,7 +6,12 @@ const QuoteBox = (props) => {
   const [ind, setInd] = useState(0);
 
   const { quotes, id, textId, authorId, newQuoteId, tweetId } = props;
+  console.log(ind);
   const { text, author } = quotes[ind];
+
+  const handleNewQuote = () => {
+    setInd(ind < quotes.length - 1 ? ind + 1 : 0)
+  }
 
   return (
     <div id={id}>
@@ -16,7 +21,7 @@ const QuoteBox = (props) => {
         textId={textId}
         authorId={authorId}
       ></QuoteDisplay>
-      <QuoteControl text={text} tweetId={tweetId} newQuoteId={newQuoteId}></QuoteControl>
+      <QuoteControl text={text} handleNewQuote={handleNewQuote} tweetId={tweetId} newQuoteId={newQuoteId}></QuoteControl>
     </div>
   );
 };
