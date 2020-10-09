@@ -20,7 +20,14 @@ const quotes = [
 ];
 
 function App() {
-  return <QuoteBox id="quote-box" quotes={quotes}></QuoteBox>;
+  const props = {
+    quotes: quotes,
+    id: "quote-box",
+    textId: "text",
+    authorId: "author",
+  };
+
+  return <QuoteBox {...props}></QuoteBox>;
 }
 
 export default App;
