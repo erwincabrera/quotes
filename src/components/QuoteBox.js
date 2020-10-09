@@ -1,8 +1,9 @@
 import React from "react";
+import QuoteControl from "./QuoteControl";
 import QuoteDisplay from "./QuoteDisplay";
 
 const QuoteBox = (props) => {
-  const { quotes, id, textId, authorId } = props;
+  const { quotes, id, textId, authorId, newQuoteId } = props;
   const ind = 0;
   const { text, author } = quotes[ind];
 
@@ -14,10 +15,7 @@ const QuoteBox = (props) => {
         textId={textId}
         authorId={authorId}
       ></QuoteDisplay>
-      <button id="new-quote">New Quote</button>
-      <a href="#quote-box" id="tweet-quote">
-        Tweet
-      </a>
+      <QuoteControl newQuoteId={newQuoteId}></QuoteControl>
     </div>
   );
 };

@@ -25,6 +25,7 @@ function App() {
     id: "quote-box",
     textId: "text",
     authorId: "author",
+    newQuoteId: "new-quote",
   };
 
   return <QuoteBox {...props}></QuoteBox>;
