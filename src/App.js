@@ -1,4 +1,5 @@
 import React from "react";
+import QuoteBox from "./components/QuoteBox";
 
 const quotes = [
   {
@@ -19,16 +20,7 @@ const quotes = [
 ];
 
 function App() {
-  return (
-    <main id="quote-box">
-      <div id="text">{quotes[0].text}</div>
-      <div id="author">{quotes[0].author}</div>
-      <button id="new-quote">New Quote</button>
-      <a href="#quote-box" id="tweet-quote">
-        Tweet
-      </a>
-    </main>
-  );
+  return <QuoteBox id="quote-box" quotes={quotes}></QuoteBox>;
 }
 
 export default App;
