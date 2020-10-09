@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import QuoteControl from "./QuoteControl";
 import QuoteDisplay from "./QuoteDisplay";
 
 const QuoteBox = (props) => {
+  const [ind, setInd] = useState(0);
+
   const { quotes, id, textId, authorId, newQuoteId, tweetId } = props;
-  const ind = 0;
   const { text, author } = quotes[ind];
 
   return (
