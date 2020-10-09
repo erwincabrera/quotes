@@ -26,6 +26,7 @@ function App() {
     textId: "text",
     authorId: "author",
     newQuoteId: "new-quote",
+    tweetId: "tweet-quote",
   };
 
   return <QuoteBox {...props}></QuoteBox>;
