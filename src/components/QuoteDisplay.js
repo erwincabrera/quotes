@@ -4,9 +4,9 @@ const QuoteDisplay = (props) => {
     const { text, author, textId, authorId} = props
 
     return (
-        <div>
-            <p id={textId}>{text}</p>
-            <p id={authorId}>{author}</p>
+        <div className="quote-display">
+            <p id={textId} className="quote-text">{text}</p>
+            <p id={authorId} className="quote-author">{author}</p>
         </div>
     )
 }
