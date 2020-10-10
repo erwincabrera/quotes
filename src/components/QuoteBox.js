@@ -6,7 +6,6 @@ const QuoteBox = (props) => {
   const [ind, setInd] = useState(0);
 
   const { quotes, id, textId, authorId, newQuoteId, tweetId } = props;
-  console.log(ind);
   const { text, author } = quotes[ind];
 
   const handleNewQuote = () => {
