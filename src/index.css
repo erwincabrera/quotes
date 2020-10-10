@@ -12,7 +12,6 @@ background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Fir
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   min-height: 100vh;
 }
 
@@ -20,13 +19,11 @@ background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Fir
   background-color: rgb(184, 184, 184);
   padding: 1em;
   margin-bottom: 1em;
-  border: 1px solid red;
 }
 
 .quote-text {
   font-size: 1.5rem;
   margin-bottom: 1em;
-  border: 1px solid black;
 }
 
 .quote-author {
