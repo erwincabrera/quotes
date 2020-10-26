@@ -22,36 +22,28 @@ body {
   font-style: italic;
   text-align: center;
   padding: 1em;
-  margin-bottom: 1em;
   max-width: 30em;
 }
 
 .quote-text {
   font-size: 1.5rem;
   margin-bottom: 1em;
+  user-select: none;
+  cursor: pointer;
 }
 
 .quote-author {
   text-align: right;
+  margin: 3em 0 0;
 }
 
 .quote-control {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.quote-new-button {
-  text-transform: uppercase;
-  cursor: pointer;
-  min-width: 48px;
-  min-height: 48px;
-  padding: .5em;
-  outline: none;
-  margin-right: auto;
+  justify-content: flex-end;
 }
 
 .quote-tweet-button {
   color: white;
+  text-decoration: none;
+  margin-right: .5em;
 }
