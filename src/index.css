@@ -1,6 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -9,12 +12,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
 }
 
 .quote-display {
-  background-color: rgb(184, 184, 184);
+  background-color: rgba(29, 29, 29, 0.5);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
   padding: 1em;
   margin-bottom: 1em;
+  max-width: 30em;
 }
 
 .quote-text {
@@ -28,7 +37,7 @@ body {
 
 .quote-control {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -36,11 +45,11 @@ body {
 .quote-new-button {
   text-transform: uppercase;
   cursor: pointer;
-  display: block;
   min-width: 48px;
   min-height: 48px;
   padding: .5em;
   outline: none;
+  margin-right: auto;
 }
 
 .quote-tweet-button {

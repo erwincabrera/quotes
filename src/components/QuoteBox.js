@@ -14,13 +14,13 @@ const QuoteBox = (props) => {
 
   return (
     <div id={id}>
+      <QuoteControl text={text} handleNewQuote={handleNewQuote} tweetId={tweetId} newQuoteId={newQuoteId}></QuoteControl>
       <QuoteDisplay
         text={text}
         author={author}
         textId={textId}
         authorId={authorId}
       ></QuoteDisplay>
-      <QuoteControl text={text} handleNewQuote={handleNewQuote} tweetId={tweetId} newQuoteId={newQuoteId}></QuoteControl>
     </div>
   );
 };
