@@ -3,6 +3,7 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 
 sass.compiler = require("sass");
 
@@ -12,7 +13,7 @@ function css() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on("error", sass.logError)
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("./dist/"));
 }
