@@ -10,7 +10,7 @@ sass.compiler = require("sass");
 
 function css() {
   return gulp
-    .src("./src/sass/**/*.scss")
+    .src("./src/styles/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on("error", sass.logError)
