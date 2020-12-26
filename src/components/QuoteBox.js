@@ -8,8 +8,8 @@ const QuoteBox = (props) => {
   const { text, author } = quotes[ind];
 
   const handleNewQuote = () => {
-    setInd(ind < quotes.length - 1 ? ind + 1 : 0)
-  }
+    setInd(ind < quotes.length - 1 ? ind + 1 : 0);
+  };
 
   return (
     <div id={id}>
@@ -23,7 +23,11 @@ const QuoteBox = (props) => {
       ></QuoteDisplay>
 
       <div className="quote-control">
-        <a href={`https://twitter.com/intent/tweet?text=${text}`} id={tweetId} className="quote-tweet-button">
+        <a
+          href={`https://twitter.com/intent/tweet?text=${text}`}
+          id={tweetId}
+          className="quote-tweet-button"
+        >
           Tweet
         </a>
       </div>

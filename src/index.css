@@ -30,7 +30,7 @@ body {
   border-left: 3px solid rgb(0, 90, 0);
   user-select: none;
   padding: .2em 0 .25em .5em;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .quote-author {
