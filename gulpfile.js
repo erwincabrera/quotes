@@ -4,6 +4,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const htmlmin = require("gulp-htmlmin");
 
 sass.compiler = require("sass");
 
@@ -18,8 +19,11 @@ function css() {
     .pipe(gulp.dest("./dist/"));
 }
 
-function copy() {
-  return gulp.src("./src/index.html").pipe(gulp.dest("./dist/"));
+function html() {
+  return gulp
+    .src("./src/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("./dist/"));
 }
 
-exports.default = gulp.parallel(css, copy);
+exports.default = gulp.parallel(css, html);
