@@ -10,12 +10,34 @@
 
 <body>
     <section id="quote-box">
-        <p id="text">A quote</p>
-        <p id='author'>Author</p>
+        <p id="text"></p>
+        <p id='author'></p>
         <button id='new-quote'>New Quote</button>
         <a id='tweet-quote'>Tweet</a>
     </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        const quotes = [
+            {
+                "text": "I am not a product of my circumstances. I am a product of my decisions.",
+                "author": "Stephen Covey"
+            },
+            {
+                "text": "Build your own dreams, or someone else will hire you to build theirs.",
+                "author": "Farrah Gray"
+            }
+        ];
+        let quoteInd = 0;
+        const updateQuote = () => {
+            document.querySelector("#text").innerHTML = quotes[quoteInd].text;
+            document.querySelector("#author").innerHTML = quotes[quoteInd].author;
+            quoteInd = (quoteInd + 1) % quotes.length;
+        };
+
+        document.querySelector("#new-quote").addEventListener("click", updateQuote);
+
+        updateQuote();
+    </script>
 </body>
 
 </html>
