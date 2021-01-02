@@ -29,13 +29,17 @@
         ];
         let quoteInd = 0;
         const updateQuote = () => {
-            document.querySelector("#text").innerHTML = quotes[quoteInd].text;
-            document.querySelector("#author").innerHTML = quotes[quoteInd].author;
+            const text = quotes[quoteInd].text;
+            const author = quotes[quoteInd].author;
+
+            document.querySelector("#text").innerHTML = text;
+            document.querySelector("#author").innerHTML = author;
+            document.querySelector("#tweet-quote").href = `https://twitter.com/intent/tweet?text=${text}`;
+
             quoteInd = (quoteInd + 1) % quotes.length;
         };
 
         document.querySelector("#new-quote").addEventListener("click", updateQuote);
-
         updateQuote();
     </script>
 </body>
