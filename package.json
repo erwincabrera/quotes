@@ -14,7 +14,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.2.1",
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
   },
   "browserslist": [
     "defaults"
