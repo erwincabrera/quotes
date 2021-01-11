@@ -1,4 +1,5 @@
 # quotes
-[Live Demo](https://erwincabrera.github.io/random-quote-machine/)
+
+[Live Demo](https://erwincabrera.github.io/quotes/)
 
 Displays various quotes along with a nice background image.
