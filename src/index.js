@@ -1,4 +1,5 @@
 import "./styles/main.scss";
+import "./test";
 
 const quotes = [
   {
